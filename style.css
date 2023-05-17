@@ -3,12 +3,14 @@ body {
     background-color: #FFFFFF;
     border-radius: 5px;
     color: #5e5e5e;
-    margin: 10px;
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
     display: block;
+    padding: 20px;
     padding-left: 120px;
+    padding-top: 80px;
 }
 
 a {
@@ -134,4 +136,65 @@ li:focus {
     overflow: hidden;
     box-sizing: border-box;
     max-height: 80% !important;
+}
+
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.chip {
+    flex: 2 1 100px;
+    height: 44px;
+    border-radius: 3px;
+    margin: 10px;
+    box-shadow: #00000018 0px 2px 5px 2px;
+    transition: all 150ms;
+    display: grid;
+    place-items: center;
+}
+
+.chip:hover {
+    box-shadow: #00000025 0px 2px 7px 3px;
+}
+
+.chip:focus {
+    background-color: #f5f5f5;    
+}
+
+.chip-square {
+    flex: 2 1 200px;
+    height: 200px;
+}
+
+.topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-title {
+    margin-left: 60px;
+}
+
+.top-buttons-container {
+    display: inline-block;
+    display: grid;
+    place-items: center;
+    margin-right: 20px;
+}
+
+.top-button {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    #top-title-text {
+        display: none;
+    }
 }
