@@ -9,10 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+
+    <style>
+        @media only screen and (max-width: 600px) {
+            .sidebar {
+                display: none;
+            }
+
+            body {
+                padding-left: 20px;
+            }
+
+            .gallery-item {
+                width: 130px;
+            }
+
+            .top-title {
+                margin-left: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body style="max-width: 100% !important; margin: 0 !important;">
     <script src="lazyload.js" defer></script>
+
     <div class="sidebar">
         <span><a href="javascript:void(0)">Gallery</a></span>
     </div>
@@ -21,12 +42,13 @@
         <h2 class="top-title"><a href="../">🌐<span id="top-title-text"> Altaf's Personal Website</span></a></h2>
         <div class="top-buttons-container">
             <a href="../notes/" class="top-button">Notes</a>
-            <a href="javascript:void(0)" class="top-button">Notes</a>
+            <a href="javascript:void(0)" class="top-button">Gallery</a>
         </div>
     </div>
 
     <h1>Gallery</h1>
-    <p>Student Immersion Photos taken by Altaf. Under development. Sorted by date. <strong>Click on an image to open the full resolution image.</strong></p>
+    <p>Student Immersion Photos taken by Altaf. Under development. Sorted by date. <strong>Click on an image to open the
+            full resolution image.</strong></p>
 
     <div class="gallery-container">
         <img data-src="../assets/images/student-immersion/20230527_094535 (Small).jpg"
