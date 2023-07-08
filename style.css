@@ -78,6 +78,16 @@ table {
     border-collapse: collapse;
 }
 
+section {
+    margin-top: 50px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.07);
+    display: block;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 5px;
+    margin-bottom: 100px;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -103,6 +113,7 @@ h1 {
     border-bottom: solid black 1px;
     padding-bottom: 0.8rem;
     color: black;
+    font-size: 1.8rem;
 }
 
 h2,
@@ -115,6 +126,42 @@ h6 {
 
 li:focus {
     background-color: #0000FF20;
+}
+
+table {
+    min-width: 500px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+thead>tr {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.colored-link {
+    color: #6495ED;
+    text-decoration: none;
+    word-wrap: break-word;
+    font-weight: 300;
+}
+
+.colored-link:hover {
+    color: #7d97c7;
+    text-decoration: underline;
+}
+
+.colored-link:focus {
+    color: #3c75e0;
+    text-decoration: underline;
+}
+
+.table-div {
+    overflow-x: auto;
 }
 
 .sidebar {
@@ -153,13 +200,15 @@ li:focus {
 
 .chip {
     flex: 2 1 100px;
-    height: 44px;
+    min-height: 24px;
     border-radius: 3px;
     margin: 10px;
     box-shadow: #00000018 0px 2px 5px 2px;
     transition: all 150ms;
     display: grid;
     place-items: center;
+    height: auto;
+    padding: 10px;
 }
 
 .chip:hover {
